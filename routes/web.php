@@ -16,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'PagesController@pages')->name('page');
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function() {
+    Route::get('/login', 'AccountController@login')->name('login');
     Route::get('/', 'DashboardController@index')->name('admin');
 });

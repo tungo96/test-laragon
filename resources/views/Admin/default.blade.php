@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>dashboar  admin</h1>
-</body>
+    @include('Admin.Layout.head')
+    <body>
+        <div id="dvLoading" style="display: none"></div>
+        @include('Admin.Layout.header')
+        <div class="main-warpper">
+            @include('Admin.Layout.sidebar')
+            <div class="content-body">
+                @yield('content')
+            </div>
+        </div>
+    </body>
 </html>
