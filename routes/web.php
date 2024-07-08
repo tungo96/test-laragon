@@ -17,5 +17,5 @@ Route::get('/', 'PagesController@pages')->name('page');
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function() {
     Route::get('/login', 'AccountController@login')->name('login');
-    Route::get('/', 'DashboardController@index')->name('admin');
+    Route::get('/home', 'DashboardController@index')->name('admin');
 });

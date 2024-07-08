@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    @include('Admin.Layout.head')
+    @include('admin.layout.head')
     <body>
         <div id="dvLoading" style="display: none"></div>
-        @include('Admin.Layout.header')
-        <div class="main-warpper">
-            @include('Admin.Layout.sidebar')
-            <div class="content-body">
+        <div id="page-container" class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-boxed">
+            @include('admin.layout.siderbar')
+            @include('admin.layout.header')
+            <main id="main-container">
                 @yield('content')
-            </div>
+            </main>
         </div>
     </body>
 </html>

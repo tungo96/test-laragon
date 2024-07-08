@@ -7,6 +7,6 @@ use App\Http\Controllers\Admin\AppController;
 class DashboardController extends AppController 
 {
    public function index() {
-    return view('Admin.default');
+    return view('admin.pages.dashboard');
    } 
 }

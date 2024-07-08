@@ -7,6 +7,6 @@ use App\Http\Controllers\Admin\AppController;
 class AccountController extends AppController 
 {
    public function login() {
-    return view('Admin.login');
+    return view('admin.login');
    } 
 }
